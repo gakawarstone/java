@@ -1,6 +1,5 @@
 package ChooseLook;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class Player {
@@ -8,7 +7,7 @@ public class Player {
 
     public void setCharacteristic(String characteristicName, String characteristicSubject) {
         try {
-            Characteristics.valueOf(characteristicName);
+            characteristics.containsValue(characteristicName);
             this.characteristics.put(characteristicName, characteristicSubject);
         } catch (Exception e) {
             throw e; // [ ] handle
