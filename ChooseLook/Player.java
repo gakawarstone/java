@@ -7,7 +7,7 @@ public class Player {
 
     public void setCharacteristic(String characteristicName, String characteristicSubject) {
         try {
-            characteristics.containsValue(characteristicName);
+            this.characteristics.containsValue(characteristicName);
             this.characteristics.put(characteristicName, characteristicSubject);
         } catch (Exception e) {
             throw e; // [ ] handle
